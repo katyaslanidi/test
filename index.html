@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img class="header__logo" src="./images/Logo.svg" alt="Логотип" />
+      <ul class="header__list">
+        <li class="header__item">Автомобили в наличии</li>
+        <li class="header__item">Спецпредложения</li>
+        <li class="header__item">Продать авто</li>
+        <li class="header__item">Сервис</li>
+        <li class="header__item">Контакты</li>
+      </ul>
+      <div class="header__btn-container">
+        <button class="header__button" type="button">Заказать звонок</button>
+        <button class="header__burger" type="menu" id="open-popup-btn"></button>
+      </div>
+    </header>
+    <section class="section">
+      <ul class="section__container">
+        <li class="section__item">
+          <img class="section__logo" src="./images/map-icon.svg" alt="Карта" />
+          <p class="section__text">Олимпийский просп., 5, стр. 1, Москва</p>
+        </li>
+        <li class="section__item">
+          <img
+            class="section__logo"
+            src="./images/nav-icon.svg"
+            alt="Навигация"
+          />
+          <p class="section__text">Проложить маршрут</p>
+        </li>
+      </ul>
+      <div class="section__item">
+        <img class="section__logo" src="./images/time-icon.svg" alt="Время" />
+        <p class="section__text">9:00 - 21:00 (ежедневно)</p>
+      </div>
+    </section>
+    <section class="main">
+      <h1 class="main__title">
+        Теперь услуги дилерского центра Вы можете получить онлайн!
+      </h1>
+      <div class="main__container">
+        <div class="main__item main__item_one">
+          <h2 class="main__subtitle">Диагностика автомобиля перед покупкой</h2>
+          <p class="main__text">
+            Расскажем обо всех скрытых дефектах автомобиля с пробегом
+          </p>
+          <button class="main__button" type="button">Записаться</button>
+        </div>
+        <div class="main__item main__item_two">
+          <h2 class="main__subtitle">Онлайн показ автомобиля по видеосвязи</h2>
+          <p class="main__text">
+            Проведем онлайн-показ интересующего автомобиля в удобное для Вас
+            время
+          </p>
+          <button class="main__button" type="button">Оставить заявку</button>
+        </div>
+        <div class="main__item main__item_three">
+          <h2 class="main__subtitle">Онлайн бронирование</h2>
+          <p class="main__text main__text_second">
+            Забронируйте понравившийся автомобиль без визита в дилерский центр
+          </p>
+          <button class="main__button main__button_second" type="button">
+            Забронировать
+          </button>
+        </div>
+        <div class="main__item main__item_four">
+          <h2 class="main__subtitle">Онлайн оценка автомобиля с пробегом</h2>
+          <p class="main__text">
+            Узнайте предварительную стоимость автомобиля за 1 мин, указав его
+            параметры
+          </p>
+          <button class="main__button" type="button">Оценить</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="overlay" id="menu">
+      <div class="menu">
+        <ul class="menu__list">
+          <li class="header__item">Автомобили в наличии</li>
+          <li class="header__item">Спецпредложения</li>
+          <li class="header__item">Продать авто</li>
+          <li class="header__item">Сервис</li>
+          <li class="header__item">Контакты</li>
+        </ul>
+        <button class="menu__button" type="button" id="close-btn"></button>
+      </div>
+    </div>
+    
+    <script type="module" src="./index.js" defer></script>
+
+  </body>
+</html>
